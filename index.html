@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost & Found Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Lost & Found Hub</h1>
+    
+    <h2>Post an Item</h2>
+    <form id="postItemForm">
+        <input type="text" id="title" placeholder="Item Title" required>
+        <input type="text" id="description" placeholder="Description" required>
+        <input type="text" id="category" placeholder="Category" required>
+        <input type="text" id="location" placeholder="Location" required>
+        <select id="status">
+            <option value="Lost">Lost</option>
+            <option value="Found">Found</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Items List</h2>
+    <ul id="itemsList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
